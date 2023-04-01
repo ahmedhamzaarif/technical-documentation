@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300;400;500;600&display=swap');
+  :root{
+    --primary: #333;
+    --secondary: #fff;
+    --medium: #555;
+  }
+  body{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: var(--primary);
+  }
+  .example{
+    padding: 1rem 2rem;
+    background: #f7f7f7;
+    display: block;
+    margin: 1rem;
+    border-radius: 5px;
+  }
+  code{
+    font-family: 'Fira Code', monospace;
+  }
+  #credits{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 0.5rem;
+    text-align: center;
+  }
+  a{
+    color: inherit !important;
+    font-weight: 500;
+  }
+  #navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 1rem;
+    width: 25%;
+    height: 100vh;
+  } 
+  #navbar header{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  #navbar ul{
+    padding: 0;
+  }
+  #navbar ul li{
+    list-style: none;
+    padding: 0.5rem 2rem;
+  }
+  main{
+    width: 75%;
+    padding: 1rem;
+  }
+  .main-section .header{
+    font-size: 1.5rem;
+  }
+  main li{
+    color: var(--medium);
+  }
+  .example p{
+    font-size: 1.2rem;
+  }
+  button{
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+  }
+  @media (max-width : 780px){
+    #navbar{
+      position: static;
+      height: fit-content;
+      width: 100%;
+    }
+    main{
+      width: 100% !important;
+    }
+  }
+</style>
+<body>
+  <nav id="navbar">
+      <header>Web Dev Roadmap</header>
+      <ul>
+          <li><a href="#introduction" class="nav-link">Introduction</a></li>
+          <li><a href="#html" class="nav-link">Html</a></li>
+          <li><a href="#css" class="nav-link">CSS</a></li>
+          <li><a href="#javascript" class="nav-link">JavaScript</a></li>
+          <li><a href="#other_things_to_know" class="nav-link">Other Things to Know</a></li>
+      </ul>
+  </nav>
+  <main id="main-doc">
+      <section class="main-section" id="introduction">
+          <header class="header">Introduction</header>
+          <p>Step by step guide to becoming a modern web developer in 2022</p>
+      </section>
+      <section class="main-section" id="html">
+          <header class="header">HTML</header>
+          <p>HTML is the standard markup language for Web pages. Where to start?</p>
+          <ul>
+              <li>Learn the basics</li>
+              <li>Writing Semantic Html</li>
+              <li>Forms and validations</li>
+          </ul>
+          <div class="example">
+              <p>Basic HTML structure:</p>
+              <code>
+                  &lt;!DOCTYPE html&gt;<br>
+                  &lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
+                  &lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+                  &lt;/body&gt;<br>&lt;/html&gt;
+              </code>
+          </div>
+      </section>
+      <section class="main-section" id="css">
+          <header class="header">CSS</header>
+          <p>CSS is the language we use to style an HTML document. Where to start?</p>
+          <ul>
+              <li>Learn the basics</li>
+              <li>Making Layouts</li>
+              <ul>
+                  <li>Floats</li>
+                  <li>Positioning</li>
+                  <li>Display</li>
+                  <li>Box Model</li>
+                  <li>Css Grid</li>
+                  <li>Flex Box</li>
+              </ul>
+              <li>Responsive Design & Media Queries</li>
+          </ul>
+          <div class="example">
+              <p>Basic Css Syntax</p>
+              <code>
+                  body
+                  <span style="color:black">{</span>
+                  <span style="color:red">
+                      <br>&nbsp;&nbsp;background-color
+                      <span style="color:mediumblue">
+                          <span style="color:black">:</span> lightblue
+                          <span style="color:black">;</span>
+                      </span>
+                      <br>
+                  </span>
+                  <span style="color:black">}</span>
+                  <br>
+                  <br>h1
+                  <span style="color:black">{</span>
+                  <span style="color:red">
+                      <br>&nbsp;&nbsp;color
+                      <span style="color:mediumblue">
+                          <span style="color:black">:</span>white
+                          <span style="color:black">;</span>
+                      </span>
+                      <br>&nbsp;&nbsp;text-align
+                      <span style="color:mediumblue">
+                          <span style="color:black">:</span> center
+                          <span style="color:black">;</span>
+                      </span><br>
+                  </span>
+                  <span style="color:black">}</span>
+                  <br><br>p
+                  <span style="color:black">{</span>
+                  <span style="color:red">
+                      <br>&nbsp;&nbsp;font-family
+                      <span  style="color:mediumblue">
+                          <span style="color:black">:</span> verdana
+                          <span style="color:black">;</span>
+                      </span>
+                      <br>&nbsp;&nbsp;font-size
+                      <span style="color:mediumblue">
+                          <span style="color:black">:</span> 20px
+                          <span style="color:black">;</span>
+                      </span><br>
+                  </span>
+                  <span style="color:black">}</span> 
+              </code>
+          </div>
+      </section>
+      <section class="main-section" id="javascript">
+          <header class="header">JavaScript</header>
+          <p>JavaScript is the world's most popular programming language.</p>
+          <p>JavaScript is the programming language of the Web.</p>
+          <p>JavaScript is easy to learn.</p>
+          <p>Where to start?</p>
+          <ul>
+              <li>Syntax and Basic Constructs</li>
+              <li>Learn DOM Mainpulation</li>
+              <li>Learn Fetch API / Ajax (XHR)</li>
+              <li>ES6 and Modular JavaScript</li>
+          </ul>
+          <div class="example">
+              <p>Example 1</p>
+              <code>
+                  <button type="button" onclick="document.getElementById('demo1').innerHTML = Date()">
+                      Click me to display Date and Time.
+                  </button>
+                  <p id="demo1"></p>
+              </code>
+          </div>
+          <div class="example">
+              <p>Example 2</p>
+              <code>
+                  <p id="demo2">JavaScript can change HTML content.</p>
+                  <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+              </code>
+          </div>
+          <div class="example">
+              <p>Example 3</p>
+              <code>
+                  <p id="demo3">JavaScript can change the style of an HTML element.</p>
+                  <button type="button" onclick="document.getElementById('demo3').style.fontSize='35px'">Click Me!</button>
+              </code>
+          </div>
+      </section>
+      <section class="main-section" id="other_things_to_know">
+        <header class="header">Other Things to Know</header>
+        <ul>
+          <li>Version Control System</li>
+          <ul>
+              <li>Git</li>
+          </ul>
+          <li>SEO</li>
+          <li>Web Security</li>
+          <li>Web Hosting</li>
+          <ul>
+              <li>Netlify</li>
+              <li>Vercel</li>
+          </ul>
+        </ul>
+      </section>
+  </main>
+  <footer>
+    <div id="credits">Made by <a href="ahmedhamzaarif.netlify.app/">Ahmed Hamza</a></div>
+  </footer>
+</body>
+</html>
